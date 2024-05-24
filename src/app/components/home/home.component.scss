@@ -1,0 +1,54 @@
+@import "../../app.component.scss";
+
+.container-home{
+    width: 1140px;
+    margin: auto;
+    display: block;
+    h1{
+        padding-top: 20px;
+
+        font-family: $fonte-principal;
+        font-size: $grande;
+        color: $cor-principal;
+    }
+    mat-grid-tile {
+        gap: 20px;
+        mat-card{
+            background-color: $branco;
+            margin:  10px;
+            box-shadow: $card-shadow;
+            transition: $card-transition;
+            width: 100%;
+            height: 100%;
+            justify-content: start;
+            // align-items: center;
+            &:hover{
+                box-shadow: $card-shadow-hover;
+            }
+            img{
+                width: 100%;
+            }
+            mat-card-content{
+                h2{
+                    font-family: $fonte-principal;
+                    font-size: $grande;
+                    color: $cinza-escuro;
+                    padding-top: 15px;
+                }
+                ul{
+                padding-top: 0px;
+                padding-left: 0;
+                padding-bottom: 20px;
+                list-style-type: none;
+                }
+                li{
+                    font-family: $fonte-principal;
+                    color:$cinza-medio;
+                    font-size: $media;
+                    line-height: $grande;
+                }
+            }
+        }
+      }
+      
+}
