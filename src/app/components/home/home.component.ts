@@ -7,5 +7,6 @@ import {MatGridListModule} from '@angular/material/grid-list';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-
+  // BINDING DE DADOS
+  imoveis: string[] = ['Casa Magnifica', 'Apartamento Padrão', 'Casa de Campo'];
 }
