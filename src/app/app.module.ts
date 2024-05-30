@@ -19,6 +19,7 @@ import {MatCardModule} from '@angular/material/card';
 
 //apointmens
 import { NgFor } from '@angular/common';
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { NgFor } from '@angular/common';
     QuemSomosComponent,
     ContatoComponent,
     HeaderComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
