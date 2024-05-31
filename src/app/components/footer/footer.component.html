@@ -1,0 +1,16 @@
+<footer>
+    <mat-toolbar>
+            <mat-toolbar-row>
+                <p>Todos os direitos reservados&copy;</p>
+                <span class="footer-spacer"></span>
+                <div *ngFor="let icon of redes">
+                    <button mat-icon-button>
+                        <a [href]="icon.link" target="_blank">
+                        <mat-icon><img [src]="icon.icons" [alt]="icon.titulo" class="filtro"></mat-icon>
+                        </a>
+                    </button>
+
+                </div>
+            </mat-toolbar-row>
+    </mat-toolbar>
+</footer>

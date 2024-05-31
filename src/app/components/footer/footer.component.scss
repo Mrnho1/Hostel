@@ -1,0 +1,20 @@
+@import '../../app.component.scss';
+
+mat-toolbar{
+    background-color: $cor-secundaria;
+    color: $branco;
+    mat-toolbar-row{
+        max-width: 1140px;
+        margin: auto;
+        .footer-spacer{
+            flex: 1 1 auto;
+        }
+        p{
+            font-size: 12px;
+        }
+        button{
+            background-color: $cor-secundaria;
+            margin-left: 10px;
+        }
+    }
+}

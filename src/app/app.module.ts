@@ -20,6 +20,7 @@ import {MatCardModule} from '@angular/material/card';
 //apointmens
 import { NgFor } from '@angular/common';
 import { DetailsComponent } from './components/details/details.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { DetailsComponent } from './components/details/details.component';
     ContatoComponent,
     HeaderComponent,
     DetailsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
