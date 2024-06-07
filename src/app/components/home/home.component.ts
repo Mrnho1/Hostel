@@ -15,6 +15,10 @@ export class HomeComponent {
     this.router.navigate(['/details', imovelId]);
   }
 
+  toogleFavorito(index: number): void{
+    this.imoveis[index].favorito = !this.imoveis[index].favorito
+  }
+
   // BINDING DE DADOS
   // imoveis: string[] = ['Casa Magnifica', 'Apartamento Padrão', 'Casa de Campo','Campo Belo'];
   imoveis: Array<any> = [

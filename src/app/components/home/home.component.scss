@@ -1,55 +1,73 @@
 @import "../../app.component.scss";
 
-.container-home{
+.container-home {
     width: 1140px;
     margin: auto;
     display: block;
-    h2{
+
+    h2 {
         padding-top: 20px;
 
         font-family: $fonte-principal;
         font-size: $grande;
         color: $cor-principal;
     }
+
     mat-grid-tile {
         gap: 20px;
-        mat-card{
+
+        mat-card {
             margin: 0px 10px 20px;
             background-color: $branco;
             box-shadow: $card-shadow;
             transition: $card-transition;
             width: 100%;
             height: 100%;
-            &:hover{
+
+            &:hover {
                 box-shadow: $card-shadow-hover;
             }
-            img{
+
+            img {
                 width: 100%;
                 height: 60%;
             }
-            mat-card-content{
-                h3{
+
+            mat-card-content {
+                h3 {
                     font-family: $fonte-principal;
                     font-size: $grande;
                     color: $cinza-escuro;
                     padding-top: 15px;
                 }
-                ul{
-                padding-top: 0px;
-                padding-left: 0;
-                padding-bottom: 20px;
-                list-style-type: none;
+
+                ul {
+                    padding-top: 0px;
+                    padding-left: 0;
+                    padding-bottom: 20px;
+                    list-style-type: none;
                 }
-                li{
+
+                li {
                     font-family: $fonte-principal;
-                    color:$cinza-medio;
+                    color: $cinza-medio;
                     font-size: $media;
                     line-height: $grande;
                 }
             }
-            mat-card-actions{
+
+            mat-card-actions {
                 padding-bottom: 20px;
-                button{
+
+                .favorite {
+                    background-color: $branco;
+                    color: silver;
+                }
+                .favorite-cheked{
+                    background-color: $branco;
+                    color: red;
+                }
+                button {
                     display: block;
                     width: 100%;
                     height: 48px;
@@ -59,11 +77,13 @@
                     background-color: $cor-secundaria;
                     color: $branco;
                     font-size: $media;
-                }
+                
             }
         }
-      }
-    #lista-imoveis{
-         margin-top: 20px;
     }
+}
+
+#lista-imoveis {
+    margin-top: 20px;
+}
 }
