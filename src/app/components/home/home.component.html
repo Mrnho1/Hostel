@@ -12,7 +12,7 @@
                                 <li>Quartos: {{imovel.quartos}}</li>
                                 <li>Banheiros: {{imovel.banheiros}}</li>
                                 <li>Metragem: {{imovel.area}}m²</li>
-                                <li>Preço: {{imovel.preco | currency : 'BRL'}}</li>
+                                <li>Preço: {{imovel.preco | currency}}</li>
                             </ul>
                         </mat-card-content>
                         <mat-card-actions>
@@ -41,7 +41,7 @@
                             <li>Quartos: {{imovel.quartos}}</li>
                             <li>Banheiros: {{imovel.banheiros}}</li>
                             <li>Metragem: {{imovel.area}}m²</li>
-                            <li>Preço: R$ {{imovel.preco}}</li>
+                            <li>Preço: {{imovel.preco | currency}}</li>
                         </ul>
                     </mat-card-content>
                     <mat-card-actions>

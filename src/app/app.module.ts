@@ -1,6 +1,10 @@
-import { NgModule } from '@angular/core';
+import { NgModule, DEFAULT_CURRENCY_CODE, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import ptBr from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+
+//components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -21,6 +25,8 @@ import {MatCardModule} from '@angular/material/card';
 import { NgFor } from '@angular/common';
 import { DetailsComponent } from './components/details/details.component';
 import { FooterComponent } from './components/footer/footer.component';
+
+registerLocaleData(ptBr);
 
 @NgModule({
   declarations: [
@@ -43,7 +49,10 @@ import { FooterComponent } from './components/footer/footer.component';
     MatCardModule,
     NgFor,
   ],
-  providers: [],
+  providers: [
+    {provide: LOCALE_ID, useValue: "pt"},
+    {provide: DEFAULT_CURRENCY_CODE, useValue: "BRL"}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
