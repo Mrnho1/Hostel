@@ -1,6 +1,7 @@
 <div class="container-home">
     <section id="imoveis-favoritos" >
         <h2>Confira aqui a sua lista de imóveis!</h2>
+        <p>{{data | date : "dd/MM/YYYY"}}</p>
         <mat-grid-list cols="3" rowHeight="3:4">
             <div *ngFor="let imovel of imoveis; let i = index">
                 <mat-grid-tile *ngIf="imovel.favorito">

@@ -18,7 +18,7 @@ export class HomeComponent {
   toogleFavorito(index: number): void{
     this.imoveis[index].favorito = !this.imoveis[index].favorito
   }
-
+  data: any = new Date();
   // BINDING DE DADOS
   // imoveis: string[] = ['Casa Magnifica', 'Apartamento Padrão', 'Casa de Campo','Campo Belo'];
   imoveis: Array<any> = [

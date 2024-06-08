@@ -8,7 +8,6 @@ import { registerLocaleData } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { ContatoComponent } from './components/contato/contato.component';
 import { QuemSomosComponent } from './components/quem-somos/quem-somos.component';
 import { HeaderComponent } from './components/header/header.component';
 
@@ -21,10 +20,12 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 
 
+
 //apointmens
 import { NgFor } from '@angular/common';
 import { DetailsComponent } from './components/details/details.component';
 import { FooterComponent } from './components/footer/footer.component';
+
 
 registerLocaleData(ptBr);
 
@@ -33,7 +34,6 @@ registerLocaleData(ptBr);
     AppComponent,
     HomeComponent,
     QuemSomosComponent,
-    ContatoComponent,
     HeaderComponent,
     DetailsComponent,
     FooterComponent,
@@ -48,6 +48,7 @@ registerLocaleData(ptBr);
     MatGridListModule,
     MatCardModule,
     NgFor,
+
   ],
   providers: [
     {provide: LOCALE_ID, useValue: "pt"},
