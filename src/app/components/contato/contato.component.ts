@@ -27,4 +27,15 @@ export class ContatoComponent {
 
     return '';
   }
+
+  submitForm(){
+    const FormData = {
+    nome: this.nome.value,
+    email: this.email.value,
+    assunto: this.assunto.value,
+    mensagem: this.mensagem.value
+    }  
+    console.log(FormData);
+  
+  }
 }

@@ -1,6 +1,6 @@
 <div class="container">
     <h1>Fale Conosco</h1>
-    <form>
+    <form (ngSubmit)="submitForm()">
         <mat-form-field>
             <mat-label>Nome</mat-label>
             <input matInput placeholder="seu nome aqui" [formControl]="nome" required>
