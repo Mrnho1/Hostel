@@ -1,28 +1,41 @@
 @import "../../app.component.scss";
 
 mat-toolbar{
+    display: flex;
     background-color: $cor-principal;
     color: $branco;
-    .container{
-        width: 1140px;
+    transition: padding 0.6s ease, height 0.4 ease;
+    #logo{
+        transition: 0.6s ease;
+    }
+    .spacerH{
+        flex: 1 1 auto;
+    }
+    #side-nav{
         display: flex;
-        margin: auto;
-        h1{
-            font-family: $fonte-principal;
-            font-size: $extra-grande;
-            padding: 5px;
-        }
-        
-        .example-spacer {
-            flex: 1 1 auto;
-          }
-        button{
-            font-size: $media;
-            padding: 25px;
-            &:hover{
-                color: $cor-secundaria;
-            }
+        flex-direction: column;
+        a{
+            color: $branco;
         }
     }
-    
+
+}
+
+@media (min-width: 900px){
+    mat-toolbar{
+        padding: 0px 100px;
+        #menu{
+            display: none;
+        }
+        mat-sidenav{
+            display: none;
+        }
+    }
+
+}
+@media (max-width: 900px){
+    .nav{
+        display: none;
+    }
+
 }

@@ -1,4 +1,4 @@
-<mat-toolbar>
+<!-- <mat-toolbar>
     <div class="container">
     <h1>Hostel</h1>
     <span class="example-spacer"></span>
@@ -6,4 +6,38 @@
     <button mat-button routerLink="quem-somos">Sobre</button>
     <button mat-button routerLink="contato">Contato</button>
   </div>
-  </mat-toolbar>
+  </mat-toolbar> -->
+<header>
+  <nav>
+    <mat-toolbar>
+      <a mat-button routerLink="/">Hostel</a>
+      <span class="spacerH"></span>
+      <div class="nav">
+        <a mat-button routerLink="/">Início</a>
+        <a mat-button routerLink="quem-somos">Sobre</a>
+        <a mat-button routerLink="contato">Contato</a>
+      </div>
+      <button mat-icon-button (click)="sidenav.toggle()" id="menu" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav [fixedInViewport]="true" [fixedTopGap]="60" mode="over">
+        <div id="side-nav">
+          <div>
+            <a (click)="sidenav.close()" mat-button routerLink="/"
+                ><mat-icon>home</mat-icon>Início</a>
+          </div>
+          <div>
+            <a (click)="sidenav.close()" mat-button routerLink="quem-somos"
+                ><mat-icon>business_center</mat-icon>Sobre</a>
+          </div>
+          <div>
+            <a (click)="sidenav.close()" mat-button routerLink="contato"
+                ><mat-icon>people</mat-icon>Contato</a>
+          </div>
+        </div>
+      </mat-sidenav>
+    </mat-sidenav-container>
+  </nav>
+</header>
